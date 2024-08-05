@@ -1,0 +1,18 @@
+#txtPersonaje {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+#tamanioImg{
+    width: 50%;
+
+}
+body{
+    background-color: #b19477;
+}
