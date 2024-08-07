@@ -14,5 +14,75 @@
 
 }
 body{
-    background-color: #b19477;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+
+.background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  z-index: -1; /* Asegura que el iframe esté detrás del contenido */
+}
+/* Estilos para la tarjeta del héroe */
+/* Estilos para la tarjeta del héroe */
+.card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.card .card-body {
+  z-index: 2;
+  position: relative;
+}
+
+.card .card-img-bottom {
+ 
+  width: 50%;
+}
+
+/* Contenedor del efecto de partículas */
+#particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(0, 225, 255, 0.8);
+  border-radius: 50%;
+  animation: particle-animation 5s infinite;
+}
+
+@keyframes particle-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+#chartContainer{
+  background-color: black !important;
 }
